@@ -1,0 +1,630 @@
+/*
+   Arquivo: style.css
+   Cores exatas da sua logo (aproximadas):
+   Dourado/Mostarda: #B28C5A
+   Verde/Oliva: #4A583A
+*/
+
+/* Reset básico para melhor visualização */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* 1. Container Principal e Centralização */
+.cabecalho {
+    text-align: center; /* Centraliza todo o conteúdo dentro do header */
+    padding: 30px 0; 
+}
+
+.logo {
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: block;
+}
+
+/* 2. Estilização da Imagem da Logo (DC) */
+.logo__imagem {
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+/* 3. Estilização do Nome Principal */
+.logo__nome {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #333; /* Cor escura para o "DRA." */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo__nome--destaque {
+    /* DÉBORA CARVALHO em Verde/Oliva */
+    color: #4b5a3c;
+    font-weight: bold; 
+}
+
+/* 4. Estilização do Subtítulo */
+.logo__subtitulo {
+    font-family: Georgia, serif; 
+    font-size: 15px;
+    letter-spacing: 4px; 
+    color: #333;
+    margin: 5px 0 15px 0;
+}
+
+/* 5. Estilização do Slogan */
+.logo__slogan {
+    font-family: 'Times New Roman', serif; 
+    font-size: 16px;
+    /* Slogan em Dourado/Mostarda */
+    color: #B28C5A; 
+    line-height: 1.4;
+    max-width: 350px; 
+    margin: 0 auto; 
+    padding: 0 10px;
+
+}
+/* --- ESTILOS DO MENU --- */
+#menu-principal {
+    background-color: #4b5a3c; /* O verde oliva da sua logo */
+    padding: 15px 0;
+    text-align: center;
+    position: static; 
+}
+
+#menu-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu-principal a:hover {
+    color: #B28C5A; /* Dourado da logo ao passar o mouse */
+}
+
+/* --- CLASSE ATIVADA PELO JAVASCRIPT (para o efeito "grudar") --- */
+.sticky {
+    position: fixed !important; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- ESTILOS DO MENU --- */
+#menu-principal {
+    background-color: #4b5a3c; /* O verde oliva da sua logo */
+    padding: 15px 0;
+    text-align: center;
+    position: static; 
+}
+
+#menu-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu-principal a:hover {
+    color: #B28C5A; /* Dourado da logo ao passar o mouse */
+}
+
+/* --- CLASSE ATIVADA PELO JAVASCRIPT (para o efeito "grudar") --- */
+.sticky {
+    position: fixed !important; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.pagina-tratamentos {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagina-tratamentos h1 {
+    color: #4A583A; /* Verde Oliva da logo */
+    margin-bottom: 50px;
+}
+
+.categoria h2 {
+    background-color: #B28C5A; /* Dourado da logo */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #4A583A;
+    border-bottom: 1px solid #B28C5A;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style:none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.card li::before {
+    content: "✔ ";
+    color: #B28C5A;
+}
+/* Container que segura os três itens */
+.container-missao {
+    display: flex;          /* Faz os itens ficarem lado a lado */
+    flex-wrap: wrap;        /* Se a tela for pequena (celular), eles pulam linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px;              /* Espaço entre as colunas */
+    padding: 50px 5%;
+    background-color: #ffffff; /* Fundo branco para destacar do resto do site */
+}
+
+/* Cada card individual (Missão, Visão ou Valor) */
+.item-institucional {
+    flex: 1;                /* Faz todos terem a mesma largura */
+    min-width: 250px;       /* Não deixa ficar muito apertado no celular */
+    max-width: 350px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.item-institucional:hover {
+    transform: translateY(-5px); /* Sobe um pouquinho quando passa o mouse */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilo do Título (Missão, Visão...) */
+.item-institucional h3 {
+    color: #4A583A;         /* Verde Oliva da logo */
+    font-size: 22px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Linha dourada embaixo do título */
+.item-institucional h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #B28C5A; /* Dourado da logo */
+}
+
+/* Estilo do texto descritivo */
+.item-institucional p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Container que segura os cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;       /* Faz pular linha se não couber */
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch;  /* IMPORTANTE: Faz todos os cards da mesma linha terem a mesma altura */
+}
+
+/* O Card Individual */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* Organiza: Imagem em cima, Texto no meio, Lista embaixo */
+    overflow: hidden;       /* Garante que a imagem não saia das bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Consertar as Imagens para não "atrapalharem" o layout */
+.card__img {
+    width: 60%;
+    height: 200px;      /* Define uma altura padrão para todas as fotos */
+    object-fit: cover;  /* Isso corta a imagem para preencher o espaço sem ficar esticada ou achatada */
+    display: block;
+}
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    
+    /* ISSO AQUI FAZ TUDO FICAR UM EMBAIXO DO OUTRO */
+    display: flex;
+    flex-direction: column; 
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card__img {
+    width: 100%;
+    height: auto;       /* Deixa a imagem respirar */
+    max-height: 250px;
+    object-fit: contain;
+    margin-top: 15px;    /* Dá um espaço entre o texto e a imagem */
+    border-radius: 5px;
+}
+.card-facial-destaque {
+    display: flex;
+    flex-direction: row; /* Força o lado a lado */
+    align-items: center;
+    width: 500px; /* Um pouco mais largo para caber a foto bem */
+    gap: 20px;
+}
+
+.card__img {
+    max-width: 200px; /* Ajuste o tamanho da foto conforme seu gosto */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Espaçamento do conteúdo interno */
+.card h3, .card ul {
+    padding: 0 20px;
+}
+
+.card h3 {
+    color: #4A583A;
+    margin-top: 15px;
+}
+
+.card ul {
+    margin-bottom: 20px;
+    flex-grow: 1; /* Faz a lista ocupar o espaço restante, empurrando o conteúdo se necessário */
+}
+.sobre-container {
+    padding: 40px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bio-texto {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bio-texto h1 { color: #4A583A; }
+.bio-texto h3 { color: #B28C5A; margin-bottom: 20px; }
+
+.foto-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.foto-card img {
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Container principal para centralizar tudo na página */
+.secao-mesoterapia {
+    display: flex;
+    flex-direction: column; /* Coloca um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente */
+    text-align: center;     /* Centraliza o texto */
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* Ajuste da Imagem para ficar visível e nítida */
+.img-mesoterapia {
+    width: 100%;
+    max-width: 500px;       /* Define um tamanho bom para leitura no PC */
+    height: auto;
+    object-fit: contain;    /* Garante que nada da imagem seja cortado */
+    border-radius: 15px;    /* Bordas arredondadas para ficar elegante */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra leve para destacar */
+    margin-bottom: 20px;
+}
+
+/* Ajuste do Texto abaixo da imagem */
+.titulo-mesoterapia {
+    color: #4A583A;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.texto-mesoterapia {
+    max-width: 600px;       /* Não deixa o texto espalhar demais na tela */
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Seletor para as fotos da trajetória */
+.foto-card img, .fotos-duplas img {
+    width: auto;           /* Permite que a largura se ajuste à foto */
+    max-width: 100%;       /* Garante que não ultrapasse o limite do card */
+    height: 300px;         /* Defina uma altura que mostre bem o rosto e o corpo */
+    object-fit: contain;   /* MOSTRA A FOTO INTEIRA sem cortar as bordas */
+    border-radius: 10px;
+    background-color: transparent; /* Evita fundos estranhos */
+}
+
+/* Se quiser que elas fiquem com a mesma altura mas sem cortar */
+.fotos-duplas {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start; /* Alinha as fotos pelo topo */
+}
+.card-texto h4 {
+    color: #4A583A;
+    margin-bottom: 10px;
+}
+
+.card-texto p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .foto-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .foto-card img, .fotos-duplas {
+        width: 100%;
+    }
+}
+.secao-final-autoridade {
+    background-color: #f4f4f4; /* Um fundo cinza bem clarinho para separar das seções brancas */
+    padding: 60px 10%;
+    border-top: 2px solid #B28C5A; /* Linha dourada sutil no topo */
+}
+
+.container-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.img-autoridade {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.texto-final {
+    flex: 1;
+}
+
+.texto-final h2 {
+    color: #4A583A;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp-final {
+    display: inline-block;
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-whatsapp-final:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* Ajuste para Celular */
+@media (max-width: 768px) {
+    .container-final {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-autoridade {
+        max-width: 100%;
+    }
+}
+/* Container que envolve a foto e o texto */
+.bio-bloco {
+    display: flex;          /* Faz com que os itens fiquem lado a lado */
+    align-items: center;    /* Centraliza verticalmente */
+    gap: 30px;              /* Dá um espaço entre a foto e o texto */
+    padding: 20px;
+    background-color: white; /* Ou outra cor de fundo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Ajuste das fotos */
+.foto-container {
+    display: flex;          /* Se tiver mais de uma foto, elas ficam lado a lado */
+    gap: 10px;
+    flex-shrink: 0;         /* Impede que as fotos encolham demais */
+}
+
+.bio-foto {
+    width: auto;
+    height: 300px;         /* Defina uma altura para a foto */
+    object-fit: cover;      /* Mantém a proporção e preenche a altura */
+    border-radius: 10px;
+}
+
+/* Ajuste do texto */
+.texto-container {
+    flex: 1;                /* Faz com que o texto ocupe o espaço restante */
+}
+
+.texto-container h4 {
+    color: #4A583A;
+    margin-bottom: 10px;
+}
+
+.texto-container p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .bio-bloco {
+        flex-direction: column; /* No celular, o texto vai para baixo da foto */
+        text-align: center;
+    }
+    .bio-foto {
+        width: 100%;        /* A foto ocupa a largura total */
+        height: auto;
+    }
+}
+.secao-precos {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.tabela-container {
+    overflow-x: auto; /* Garante que a tabela não quebre no celular */
+    margin-top: 30px;
+}
+
+.tabela-investimento {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tabela-investimento th {
+    background-color: #4A583A; /* Verde escuro da logo */
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.tabela-investimento td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.tabela-investimento tr:hover {
+    background-color: #f1f4ef; /* Efeito visual ao passar o mouse */
+}
+
+.destaque-tabela {
+    background-color: #fffdf9;
+    font-weight: bold;
+}
+
+.tabela-investimento td:last-child {
+    color: #B28C5A; /* Destaque dourado para as parcelas */
+    font-weight: bold;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .tabela-investimento th, .tabela-investimento td {
+        padding: 10px 5px;
+        font-size: 0.8rem;
+    }
+}
+/* No seu style.css, adicione esse detalhe */
+.item-premium {
+    background-color: #fcfaf7; /* Um tom de palha bem suave */
+    border-left: 4px solid #B28C5A; /* Destaque lateral em dourado */
+}
+
+.item-premium td:first-child {
+    font-weight: bold;
+    color: #4A583A; /* Verde da logo */
+}
+.nossa-estrutura {
+    padding: 60px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.galeria-clinica {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap; /* Para funcionar bem no celular */
+}
+
+.foto-clinica {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Faz as fotos ficarem do mesmo tamanho sem distorcer */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.foto-clinica:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.endereco-texto {
+    margin-top: 20px;
+    color: #4A583A;
+    font-size: 1.1rem;
+}
